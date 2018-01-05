@@ -40,7 +40,17 @@
 #}</div>
 {% endif %}
 
-{% if theme.footer.powered and theme.footer.theme.enable %}
+{% if theme.footer.hosted or theme.footer.theme.enable %}
+  <span class="post-meta-divider">|</span>
+{% endif %}
+
+{% if theme.footer.hosted %}
+  <div class="hosted-by">{#
+  #}{{ __('footer.hosted', '<a class="theme-link" target="_blank" href="https://pages.coding.me">Coding Pages</a>') }}{#
+#}</div>
+{% endif %}
+
+{% if theme.footer.powered or theme.footer.hosted %}
   <span class="post-meta-divider">|</span>
 {% endif %}
 

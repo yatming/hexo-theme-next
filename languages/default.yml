@@ -49,6 +49,7 @@ page:
 
 footer:
   powered: "Powered by %s"
+  hosted: "Hosted by %s"
   theme: Theme
 
 counter:
